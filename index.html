@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset+"UTF-8">
+    <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <!--Non-specific link, creates global variable React-->
+<script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+    <!--Link to create webpages, creates global variable React-Dom-->
+<script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+    <!--Loads Babel to access JSX-->
+<script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<script type="text/babel">
+    //Our code will go here
+    //const appRoot = document.querySelector('#application-root');
+    //ReactDOM.render('Hello, world!', appRoot);
+    
+    //const helloWorldH1 = React.createElement('h1', null, 'Hello, world!');
+    //ReactDOM.render(helloWorldH1, appRoot);
+
+    //We can refactor helloWorldH1 using JSX
+    //const helloWorldH1 = <h1>Hello, world!</h1>;
+
+    /*ReactDom.render(
+        <div>
+            <h1>Hello, world!</h1>
+            <p>How are you today?</p>
+            <h2>Look what React can do!</h2>
+        </div>,
+        document.querySelector('#application-root')
+    );*/
+    
+    //React components work written as functions
+    //App Component
+    /*function App(){
+        return(
+            <div>
+                <h1>Hello, everyone!</h1>
+                <p>We think</p>
+                <ul>
+                    <li>React</li>
+                    <li>is</li>
+                    <li>brilliant!</li>
+                </ul>   
+            </div>
+        );
+    };*/
+
+    //App Component
+    /*function App(props){
+        console.log(props)
+        return (
+            <span id='app-id' className={props.className}>
+                My App
+            </span>
+        );
+    }*/
+
+    //Use the App componenet:
+    //insert the App's element tree in the #application-root
+    /*ReactDOM.render(
+        //Add a className to the App
+        <App className='new-class-name'
+        foo='bar'
+        boolProp={false}
+        numberProp={123}
+        objectProp={{ baz: 'buzz'}}
+        arrayProp={[ '3', '2', '1' ]}
+        />,
+        document.querySelector('#application-root')
+    );*/
+
+    function App(props){
+        console.log(props)
+        return(
+            <header>
+                {props.children}
+            </header>
+        );
+    }
+
+    //Nested elements inside the App
+    ReactDOM.render(
+        <App className= 'my-class'>
+            <h1>Current Page Title!</h1>
+        </App>,
+        document.querySelector('#application-root')
+    );
+
+</script>
+</body>
+</html>

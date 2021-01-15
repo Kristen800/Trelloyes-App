@@ -1,0 +1,55 @@
+@media (min-width:600px){
+    body{
+      width:80%;
+      margin: 0 auto;
+    }
+    img{
+      display: flex;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  
+  body {
+    text-align: left;
+    color:antiquewhite;
+    background: -webkit-linear-gradient(rgba(28, 28, 31, 0.1), rgba(28, 28, 31, 0.8)),
+      -webkit-linear-gradient(rgba(28, 28, 31, 0.5), rgba(28, 28, 31, 0.3)),
+      url('Background.jpg');
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      background-color: rgba(28, 28, 31, 1);
+      font-family: "Archivo Narrow", Helvetica, sans-serif;
+      letter-spacing: 1px;
+  }
+  
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  #results-list{
+    list-style: none;
+  }
+  
+  #drink{
+    background-color: #001933;
+    border: 2px;
+    
+    text-align: center;
+    color: antiquewhite;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Archivo Narrow", Helvetica, sans-serif;
+    padding: 15px 32px;
+    border-radius: 12px;
+  }
+  
+
+  .hidden {
+    display: none;
+  }

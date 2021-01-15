@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  body{
+    font-family: 'Times New Roman', Times, serif;
+    background: #228B22;
+  }
+  
+  ul{
+      list-style: none;
+  }
+
+  a:link{
+      color: #FFA500;
+      text-decoration: none;
+  }
+
+  a:visited{
+      color:darkcyan;
+      text-decoration: none;
+  }
+
+  a:hover{
+      color:cornsilk;
+      text-decoration: none;
+  }
+  section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .container{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  button{
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .error-message {
+      color: red;
+  }

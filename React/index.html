@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset+"UTF-8">
+    <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <!--Non-specific link, creates global variable React-->
+<script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+    <!--Link to create webpages, creates global variable React-Dom-->
+<script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script>
+    //Our code will go here
+    const appRoot = document.querySelector('#application-root');
+
+    ReactDOM.render('Hello, world!', appRoot);
+</script>
+</body>
+</html>
