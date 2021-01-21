@@ -5,7 +5,8 @@ import Split from './composition/Split.js';
 //import the CSS file
 import './App.css';
 import Tooltip from './composition/Tooltip';
-
+import HelloWorld from './state-drills/HelloWorld';
+import Bomb from './state-drills/Bomb';
 //make 2 tooltips here and another inside the App directly
 const firstTooltip = (
   <Tooltip color='hotpink'  message=' tooltip message '>
@@ -22,6 +23,8 @@ const secondTooltip = (
 function App() {
   return (
     <main className='App'>
+      <HelloWorld />
+      <Bomb />
       <Split className='left' flexBasis={2}>
         This is the content for the left `Split`. Lorem {firstTooltip} dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
         {/* make another tooltip directly inside the App*/}
